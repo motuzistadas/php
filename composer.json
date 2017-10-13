@@ -1,0 +1,16 @@
+{
+    "name": "tmotuzis/php",
+    "authors": [
+        {
+            "name": "Tadas Motužis",
+            "email": "motuzis.tadas@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload":{
+        "psr-4":{
+            "Media\\": "app/Media"
+        }
+    }
+}
