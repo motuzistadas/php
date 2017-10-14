@@ -32,5 +32,18 @@ class Book
     {
         echo "Calling static method '$name' " . implode(', ', $arguments). PHP_EOL;
     }
+
+    public function __toString()
+    {
+        return $this->title;
+    }
+
+    public function __debugInfo() {
+        return [
+            'someInfo' => $this->title . " | __debug",
+        ];
+    }
+
+
 }
 
