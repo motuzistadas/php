@@ -6,19 +6,18 @@
  * Time: 11.35
  */
 
+header('Content-Type: text/plain');
+
 use Media\Internet\Site;
 use Media\Printings\Books\Book;
 use Media\Printings\Newspapers\Newspaper;
 use Media\Printings\Printing;
 
-header('Content-Type: text/plain');
+require_once __DIR__ . '/autoload.php';
 
 function hr($method){
     echo PHP_EOL . $method . PHP_EOL . "-------------------" . PHP_EOL;
 }
-
-require_once __DIR__ . '/vendor/autoload.php';
-
 
 hr("__construct, __toString, __call, __staticCall, __set, __get");
 $book = new Book("PHP basics");
